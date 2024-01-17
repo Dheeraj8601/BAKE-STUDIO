@@ -98,7 +98,8 @@
                     <a class="nav-link" href="my_bakery">MY CHOICE</a>
                 </li>
             </ul>
-            <a class="nav-link" href="bakery_register">ADD NEW ITEM</a>
+<!--            <a class="nav-link" href="bakery_register">ADD NEW ITEM</a>-->
+            <button type="button" class="btn btn-primary" onclick="checkAdminPin()">ADD NEW ITEM</button>
         </div>
     </div>
 </nav>
@@ -112,5 +113,24 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+        function checkAdminPin() {
+            // Change this pin to match the one in your program
+            var correctPin = "Dheeraj";
+
+            // Prompt the user for the pin
+            var enteredPin = prompt("Enter Admin Pin:");
+
+            // Check if the entered pin matches the correct pin
+            if (enteredPin === correctPin) {
+                // If it matches, redirect to the "ADD NEW ITEM" page
+                window.location.href = "bakery_register"; // Change the URL to your actual "ADD NEW ITEM" page
+            } else {
+                // If it doesn't match, show an alert and stay on the current page
+                alert("Incorrect Admin Pin. Returning to Home Page.");
+                // window.location.href = "/"; // Uncomment this line if you want to return to the home page
+            }
+        }
+    </script>
 </body>
 </html>
