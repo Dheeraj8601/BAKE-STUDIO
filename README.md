@@ -26,7 +26,5 @@ This project is a Bakery Store Management System implemented using the Spring Bo
 
 3. Run the `BakeryStoreApplication` class.
 
-4. Access the application in your web browser at
-   ```bash
-   [http://localhost:8080](http://localhost:8080).
-   ```
+4. Access the application in your web browser at [http://localhost:8080](http://localhost:8080).
+
